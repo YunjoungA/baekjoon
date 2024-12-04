@@ -1,8 +1,11 @@
-#15552 
-a,b = input().split() #1 2 -> ['1','2']
+import sys
 
-#문자열을 정수로 바꿔준다.
-a = int(a)
-b = int(b)
+# 1. test case의 개수를 입력 받습니다.
+T = int(sys.stdin.readline())
 
-print(a+b)
+# 2. test case의 개수만큼 반복합니다.
+for _ in range(T):
+    # 3. 공백을 기준으로 구분 되어 주어지는 두 정수를 입력받습니다.
+    A, B = map(int, sys.stdin.readline().split())
+    # 4. 두 정수의 합을 출력합니다.
+    print(A+B)
