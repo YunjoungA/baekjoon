@@ -1,0 +1,14 @@
+totalAmt = int(input()) # 최종가격
+
+totalProductCnt = int(input()) # 구매한 제품 개수  
+
+totalPrice = 0 
+
+for _ in range(totalProductCnt):
+    a, b = map(int, input().split())
+    totalPrice += a * b
+
+if totalAmt == totalPrice:
+    print("Yes")
+else:
+    print("No") 
