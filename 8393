@@ -1,0 +1,11 @@
+#8393
+
+n = int(input())
+
+total = 0
+
+for _ in range(n):
+  total += n
+  n -= 1
+
+print(total)
