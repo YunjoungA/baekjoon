@@ -1,0 +1,10 @@
+n = int(input())
+a = []
+
+lst = list(map(int, input().split())) #리스트에 입력받는 순서대로 넣기 
+
+#for _ in range(n):
+#  a.append(int(input()))   런타임에러가 남
+
+
+print(min(lst), max(lst))
