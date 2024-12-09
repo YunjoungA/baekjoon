@@ -1,0 +1,7 @@
+#1152
+
+wordInput = str(input())
+
+word = wordInput.split()
+
+print(len(word))
