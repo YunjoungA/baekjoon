@@ -1,0 +1,17 @@
+#10988
+
+
+word = list(str(input()))
+
+is_pelin = True
+
+for i in range(0, len(word) // 2):
+    if word[i] != word[-1-i]:
+        is_pelin = False
+        break
+
+
+if is_pelin:
+    print('1')
+else:
+    print('0')
